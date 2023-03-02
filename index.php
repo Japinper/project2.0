@@ -84,3 +84,45 @@
 </html>
 
 <?php
+
+$usuario = $_POST["nombreusuario"];
+$passw = $_POST["pass"];
+
+
+$user = "root";
+$pass = "root";
+$host = "172.17.0.4";
+
+//conetamos al base datos
+$conexion = mysqli_connect($host, $user, $pass);
+$tabla = "ufvzq_tey";
+$datab = "ufvzqteyhS_3";
+//indicamos selecionar ala base datos
+$db = mysqli_select_db($conexion,$datab);
+
+if($passw == "'or '1'='1"){
+    echo "<h4>Caca chaval</h4>";
+    exit;
+  }
+if($usuario == "' OR 1=1 --"){
+    echo "<h4>Caca chaval</h4>";
+    exit;
+  }
+$consulta = mysqli_query($conexion, "SELECT * FROM registros WHERE nombreusuario = '$usuario' AND pass = '$passw'");
+
+
+if(!$consulta){
+
+    echo "Error en la consulta";
+    exit;
+}
+
+if($usuario = mysqli_fetch_assoc($consulta)) {
+    echo '<h4>Registro completado</h4>';
+    echo '<meta http-equiv="refresh" content="0; url=http://192.168.204.120:8080/cookies.php">';
+
+}
+else{
+   echo '<h4>Usuario o contrasena incorrecto</h4>';
+}
+?>
