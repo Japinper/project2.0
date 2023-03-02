@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Configura la seguridad de la instalación de MariaDB
+mysql_secure_installation << EOF
+
+y
+root
+root
+y
+y
+y
+y
+EOF
+
+# Inicia sesión en la consola de MySQL con el usuario root y crea la base de datos
+sudo mysql -u root -proot << EOF
+
+CREATE DATABASE ufvzqteyhS_3;
+USE ufvzqteyhS_3;
+CREATE TABLE ufvzq_tey (
+   nombreusuario TEXT,
+   email TEXT UNIQUE,
+   pass TEXT,
+);
+EOF
