@@ -17,9 +17,4 @@ mysql -u root -proot << EOF
 
 CREATE DATABASE ufvzqteyhS_3;
 USE ufvzqteyhS_3;
-CREATE TABLE ufvzq_tey (
-   nombreusuario TEXT,
-   email TEXT UNIQUE,
-   pass TEXT,
-);
-
+CREATE TABLE ufvzq_tey nombreusuario TEXT, email TEXT UNIQUE, pass TEXT;
