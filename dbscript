@@ -22,4 +22,4 @@ CREATE TABLE ufvzq_tey (
    email TEXT UNIQUE,
    pass TEXT,
 );
-EOF
+
