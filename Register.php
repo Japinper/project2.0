@@ -5,11 +5,11 @@ function ruta(){
 //validamos datos del servidor
 $user = "root";
 $pass = "root";
-$host = "172.17.0.2";
+$host = "172.17.0.4";
 
 //conetamos al base datos
 $conexion = mysqli_connect($host, $user, $pass);
-$tabla = "registros";
+$tabla = "ufvzq_tey";
 
 //formuario
 $nombre = $_POST["nombreusuario"] ;
@@ -27,7 +27,7 @@ if(!$conexion)
             echo "Hemos conectado al servidor" ;
         }
         //indicamos el nombre de la base datos
-        $datab = "registro";
+        $datab = "ufvzqteyhS_3";
         //indicamos selecionar ala base datos
         $db = mysqli_select_db($conexion,$datab);
 
@@ -40,7 +40,7 @@ if(!$conexion)
         echo "<h1>Registro completado</h1>" ;
         }
         //insertamos datos de registro al mysql xamp, indicando nombre de la tabla y sus atributos
-        $instruccion_SQL = "INSERT INTO $tabla (nombreusuario, email, pass)
+        $instruccion_SQL = "INSERT INTO $tabla (u4rs, m2i1, p7ssw)
                              VALUES ('$nombre','$email','$passw')";
         ruta();
         $resultado = mysqli_query($conexion,$instruccion_SQL);
