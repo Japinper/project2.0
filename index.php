@@ -108,7 +108,7 @@ if($usuario == "' OR 1=1 --"){
     echo "<h4>Caca chaval</h4>";
     exit;
   }
-$consulta = mysqli_query($conexion, "SELECT * FROM registros WHERE nombreusuario = '$usuario' AND pass = '$passw'");
+$consulta = mysqli_query($conexion, "SELECT * FROM ufvzq_tey WHERE u4rs = '$usuario' AND p7ssw = '$passw'");
 
 
 if(!$consulta){
