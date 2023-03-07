@@ -17,6 +17,10 @@ mysql -u root -proot << EOF
 
 CREATE DATABASE ufvzqteyhS_3;
 USE ufvzqteyhS_3;
+CREATE USER 'register'@'172.17.0.3' IDENTIFIED BY 'p2sswrd';
+GRANT ALL PRIVILEGES ON ufvzqteyhS_3.* TO 'register'@'172.17.0.3';
+CREATE USER 'login'@'172.17.0.2' IDENTIFIED BY 'p3sswrd';
+GRANT ALL PRIVILEGES ON ufvzqteyhS_3.* TO 'login'@'172.17.0.2';
 CREATE TABLE ufvzq_tey (
     id INT(11) NOT NULL AUTO_INCREMENT,
     u4rs TEXT NOT NULL,
