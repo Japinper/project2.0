@@ -119,7 +119,7 @@ if(!$consulta){
 
 if($usuario = mysqli_fetch_assoc($consulta)) {
     echo '<h4>Registro completado</h4>';
-    echo '<meta http-equiv="refresh" content="0; url=http://54.80.212.77:8080/cookies.php">';
+    echo '<meta http-equiv="refresh" content="0; url=http://54.162.63.20:8080/cookies.php">';
 
 }
 else{
