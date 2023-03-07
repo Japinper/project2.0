@@ -3,8 +3,8 @@ function ruta(){
         echo '<meta http-equiv="refresh" content="0; url=http://54.162.63.20:8080">';
 }
 //validamos datos del servidor
-$user = "root";
-$pass = "root";
+$user = "register";
+$pass = "p2sswrd";
 $host = "172.17.0.4";
 
 //conetamos al base datos
