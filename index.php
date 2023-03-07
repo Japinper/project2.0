@@ -89,8 +89,8 @@ $usuario = $_POST["nombreusuario"];
 $passw = $_POST["pass"];
 
 
-$user = "root";
-$pass = "root";
+$user = "login";
+$pass = "p3sswrd";
 $host = "172.17.0.4";
 
 //conetamos al base datos
