@@ -1,6 +1,6 @@
 <?php
 function ruta(){
-        echo '<meta http-equiv="refresh" content="0; url=http://3.95.249.25:8080">';
+        echo '<meta http-equiv="refresh" content="0; url=http://54.81.118.91:8080">';
 }
 //validamos datos del servidor
 $user = "register";
